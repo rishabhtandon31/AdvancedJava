@@ -1,0 +1,17 @@
+package com.cg.banking.daoservices;
+
+import java.util.List;
+
+import com.cg.banking.beans.Account;
+import com.cg.banking.beans.Transaction;
+
+public interface AccountDAO {
+	long saveAccountDetails(Account account);
+	Account getDetails(long accountNo);
+	boolean updateAccount(Account account);
+	Account transactionEntry(Account account);
+	List<Account> getAllAccountDetail();
+	List<Transaction> getAccountAllTransactions(long accountNo);
+	int pinNumberTrialsUpdate(long accountNo);
+	int getPinTrials(long accountNo);
+}

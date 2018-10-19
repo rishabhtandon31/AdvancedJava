@@ -1,0 +1,940 @@
+2018-10-19 20:22:20 DEBUG logging:38 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2018-10-19 20:22:20 DEBUG HibernatePersistenceProvider:98 - Located and parsed 1 persistence units; checking each
+2018-10-19 20:22:20 DEBUG HibernatePersistenceProvider:106 - Checking persistence-unit [name=JPA-PU, explicit-provider=org.hibernate.jpa.HibernatePersistenceProvider] against incoming persistence unit name [JPA-PU]
+2018-10-19 20:22:20 DEBUG ProviderChecker:87 - Persistence-unit [JPA-PU] requested PersistenceProvider [org.hibernate.jpa.HibernatePersistenceProvider]
+2018-10-19 20:22:20 DEBUG LogHelper:102 - PersistenceUnitInfo [
+	name: JPA-PU
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: null
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/D:/159950_Rishabh_Tandon/JPA_Hibernate/JPAHibernateBankingSystem/target/classes/
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names []
+	Mapping files names []
+	Properties [
+		javax.persistence.jdbc.driver: oracle.jdbc.driver.OracleDriver
+		javax.persistence.jdbc.password: corp123
+		javax.persistence.jdbc.url: jdbc:oracle:thin:@localhost:1521:XE
+		hibernate.dialect: org.hibernate.dialect.Oracle10gDialect
+		hibernate.show_sql: true
+		hibernate.hbm2ddl.auto: update
+		javax.persistence.jdbc.user: system]
+2018-10-19 20:22:20 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2018-10-19 20:22:20 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2018-10-19 20:22:20 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2018-10-19 20:22:20 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].
+2018-10-19 20:22:20 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2018-10-19 20:22:20 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-10-19 20:22:20 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2018-10-19 20:22:20 DEBUG RegionFactoryInitiator:75 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2018-10-19 20:22:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@4d6e83
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@4d6e83
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4d6e83
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1db50c5
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1a15ff
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration yes_no -> org.hibernate.type.YesNoType@5997b1
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@4921a5
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@4921a5
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4921a5
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration character -> org.hibernate.type.CharacterType@19b92f3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration char -> org.hibernate.type.CharacterType@19b92f3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@19b92f3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@1cd19b3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@1cd19b3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1cd19b3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration integer -> org.hibernate.type.IntegerType@1211155
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration int -> org.hibernate.type.IntegerType@1211155
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1211155
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@123a213
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@123a213
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@123a213
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@7c290d
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@7c290d
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7c290d
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@9a5fbe
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@9a5fbe
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@9a5fbe
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1b4de6a
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1b4de6a
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@ecb35a
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@ecb35a
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration string -> org.hibernate.type.StringType@2db087
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.String -> org.hibernate.type.StringType@2db087
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@3e710e
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@698dc7
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration url -> org.hibernate.type.UrlType@171c76a
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@171c76a
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration Duration -> org.hibernate.type.DurationType@b9e255
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@b9e255
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration Instant -> org.hibernate.type.InstantType@1df177
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1df177
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1b37288
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1b37288
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@42d7b5
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@42d7b5
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@19b62af
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@19b62af
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1c43f4e
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@1c43f4e
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@1127a61
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@1127a61
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1e21d0e
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@1e21d0e
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration date -> org.hibernate.type.DateType@d6fe6
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@d6fe6
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration time -> org.hibernate.type.TimeType@1574691
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1574691
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration timestamp -> org.hibernate.type.TimestampType@1445d7f
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@1445d7f
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@1445d7f
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@405818
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration calendar -> org.hibernate.type.CalendarType@13da22c
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@13da22c
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@13da22c
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@166e06f
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration locale -> org.hibernate.type.LocaleType@1147d0
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1147d0
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration currency -> org.hibernate.type.CurrencyType@185cb26
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@185cb26
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@9e725a
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@9e725a
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration class -> org.hibernate.type.ClassType@6be2c3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6be2c3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@11bdc27
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@11bdc27
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@1c1a03d
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration binary -> org.hibernate.type.BinaryType@9ba3fb
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration byte[] -> org.hibernate.type.BinaryType@9ba3fb
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration [B -> org.hibernate.type.BinaryType@9ba3fb
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@c1c010
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@c1c010
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@c1c010
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration row_version -> org.hibernate.type.RowVersionType@1339552
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration image -> org.hibernate.type.ImageType@9bd883
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration characters -> org.hibernate.type.CharArrayType@61c7e3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration char[] -> org.hibernate.type.CharArrayType@61c7e3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration [C -> org.hibernate.type.CharArrayType@61c7e3
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6a82c4
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6a82c4
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6a82c4
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration text -> org.hibernate.type.TextType@d2d351
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration ntext -> org.hibernate.type.NTextType@16d53b2
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration blob -> org.hibernate.type.BlobType@5eaa29
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5eaa29
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@12e5f00
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration clob -> org.hibernate.type.ClobType@a263c2
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@a263c2
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration nclob -> org.hibernate.type.NClobType@11c7bf6
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@11c7bf6
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1740a0f
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@93de87
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration serializable -> org.hibernate.type.SerializableType@12bf671
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration object -> org.hibernate.type.ObjectType@1c1bced
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1c1bced
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@50a6f6
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@ec4505
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@1ca01a2
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@18c99f5
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@e0fea4
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@524010
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1168fa9
+2018-10-19 20:22:20 DEBUG BasicTypeRegistry:145 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@84f40f
+2018-10-19 20:22:20 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2018-10-19 20:22:20 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:XE]
+2018-10-19 20:22:20 INFO  pooling:132 - HHH10001001: Connection properties: {user=system, password=corp123}
+2018-10-19 20:22:20 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2018-10-19 20:22:20 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+2018-10-19 20:22:20 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2018-10-19 20:22:20 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : Oracle
+    version : Oracle Database 11g Express Edition Release 11.2.0.2.0 - Production
+      major : 11
+      minor : 2
+2018-10-19 20:22:20 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : Oracle JDBC driver
+    version : 11.2.0.2.0
+      major : 11
+      minor : 2
+2018-10-19 20:22:20 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 11.2
+2018-10-19 20:22:20 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2018-10-19 20:22:21 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2018-10-19 20:22:21 DEBUG Namespace:47 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2018-10-19 20:22:21 DEBUG AnnotationBinder:511 - Binding entity from annotated class: com.cg.banking.beans.Account
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2018-10-19 20:22:21 DEBUG EntityBinder:419 - Import with entity name Account
+2018-10-19 20:22:21 DEBUG EntityBinder:695 - Bind entity com.cg.banking.beans.Account on table Account
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=accountNo, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG PropertyBinder:174 - MetadataSourceProcessor property accountNo with lazy=false
+2018-10-19 20:22:21 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.cg.banking.beans.Account:accountNo]
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:411 - building SimpleValue for accountNo
+2018-10-19 20:22:21 DEBUG PropertyBinder:265 - Building property accountNo
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=accountBalance, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG PropertyBinder:174 - MetadataSourceProcessor property accountBalance with lazy=false
+2018-10-19 20:22:21 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.cg.banking.beans.Account:accountBalance]
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:411 - building SimpleValue for accountBalance
+2018-10-19 20:22:21 DEBUG PropertyBinder:265 - Building property accountBalance
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=accountType, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG PropertyBinder:174 - MetadataSourceProcessor property accountType with lazy=false
+2018-10-19 20:22:21 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.cg.banking.beans.Account:accountType]
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:411 - building SimpleValue for accountType
+2018-10-19 20:22:21 DEBUG PropertyBinder:265 - Building property accountType
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=pinNumber, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG PropertyBinder:174 - MetadataSourceProcessor property pinNumber with lazy=false
+2018-10-19 20:22:21 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.cg.banking.beans.Account:pinNumber]
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:411 - building SimpleValue for pinNumber
+2018-10-19 20:22:21 DEBUG PropertyBinder:265 - Building property pinNumber
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=status, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG PropertyBinder:174 - MetadataSourceProcessor property status with lazy=false
+2018-10-19 20:22:21 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.cg.banking.beans.Account:status]
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:411 - building SimpleValue for status
+2018-10-19 20:22:21 DEBUG PropertyBinder:265 - Building property status
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='account'}
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=transactions, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=transactions_KEY, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='transactions_KEY', referencedColumn='null', mappedBy='null'}
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='account'}
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='account'}
+2018-10-19 20:22:21 DEBUG CollectionBinder:389 - Collection role: com.cg.banking.beans.Account.transactions
+2018-10-19 20:22:21 DEBUG PropertyBinder:265 - Building property transactions
+2018-10-19 20:22:21 DEBUG AnnotationBinder:511 - Binding entity from annotated class: com.cg.banking.beans.Transaction
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2018-10-19 20:22:21 DEBUG EntityBinder:419 - Import with entity name Transaction
+2018-10-19 20:22:21 DEBUG EntityBinder:695 - Bind entity com.cg.banking.beans.Transaction on table Transaction
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Transaction), mappingColumn=transactionId, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG PropertyBinder:174 - MetadataSourceProcessor property transactionId with lazy=false
+2018-10-19 20:22:21 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.cg.banking.beans.Transaction:transactionId]
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:411 - building SimpleValue for transactionId
+2018-10-19 20:22:21 DEBUG PropertyBinder:265 - Building property transactionId
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Transaction), mappingColumn=account, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG PropertyBinder:265 - Building property account
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Transaction), mappingColumn=amount, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG PropertyBinder:174 - MetadataSourceProcessor property amount with lazy=false
+2018-10-19 20:22:21 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.cg.banking.beans.Transaction:amount]
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:411 - building SimpleValue for amount
+2018-10-19 20:22:21 DEBUG PropertyBinder:265 - Building property amount
+2018-10-19 20:22:21 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Transaction), mappingColumn=transactionType, insertable=true, updatable=true, unique=false}
+2018-10-19 20:22:21 DEBUG PropertyBinder:174 - MetadataSourceProcessor property transactionType with lazy=false
+2018-10-19 20:22:21 DEBUG AbstractPropertyHolder:95 - Attempting to locate auto-apply AttributeConverter for property [com.cg.banking.beans.Transaction:transactionType]
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:411 - building SimpleValue for transactionType
+2018-10-19 20:22:21 DEBUG PropertyBinder:265 - Building property transactionType
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for accountNo
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for accountBalance
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for accountType
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for pinNumber
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for status
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for transactionId
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for amount
+2018-10-19 20:22:21 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for transactionType
+2018-10-19 20:22:21 DEBUG PrimaryKey:35 - Forcing column [accountno] to be non-null as it is part of the primary key for table [account]
+2018-10-19 20:22:21 DEBUG PrimaryKey:35 - Forcing column [transactionid] to be non-null as it is part of the primary key for table [transaction]
+2018-10-19 20:22:21 DEBUG CollectionSecondPass:51 - Second pass for collection: com.cg.banking.beans.Account.transactions
+2018-10-19 20:22:21 DEBUG CollectionBinder:840 - Binding a OneToMany: com.cg.banking.beans.Account.transactions through a foreign key
+2018-10-19 20:22:21 DEBUG CollectionBinder:878 - Mapping collection: com.cg.banking.beans.Account.transactions -> Transaction
+2018-10-19 20:22:21 DEBUG TableBinder:565 - Retrieving property com.cg.banking.beans.Transaction.account
+2018-10-19 20:22:21 DEBUG CollectionSecondPass:68 - Mapped collection key: account_accountNo, one-to-many: com.cg.banking.beans.Transaction
+2018-10-19 20:22:21 DEBUG InFlightMetadataCollectorImpl:1798 - Resolving reference to class: com.cg.banking.beans.Account
+2018-10-19 20:22:21 DEBUG InFlightMetadataCollectorImpl:1798 - Resolving reference to class: com.cg.banking.beans.Account
+2018-10-19 20:22:21 DEBUG SessionFactoryImpl:200 - Building session factory
+2018-10-19 20:22:21 DEBUG Settings:69 - SessionFactory name : null
+2018-10-19 20:22:21 DEBUG Settings:70 - Automatic flush during beforeCompletion(): enabled
+2018-10-19 20:22:21 DEBUG Settings:71 - Automatic session close at end of transaction: disabled
+2018-10-19 20:22:21 DEBUG Settings:73 - Statistics: disabled
+2018-10-19 20:22:21 DEBUG Settings:75 - Deleted entity synthetic identifier rollback: disabled
+2018-10-19 20:22:21 DEBUG Settings:76 - Default entity-mode: pojo
+2018-10-19 20:22:21 DEBUG Settings:77 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2018-10-19 20:22:21 DEBUG Settings:78 - Allow initialization of lazy state outside session : disabled
+2018-10-19 20:22:21 DEBUG Settings:80 - Using BatchFetchStyle : LEGACY
+2018-10-19 20:22:21 DEBUG Settings:81 - Default batch fetch size: -1
+2018-10-19 20:22:21 DEBUG Settings:82 - Maximum outer join fetch depth: null
+2018-10-19 20:22:21 DEBUG Settings:83 - Default null ordering: NONE
+2018-10-19 20:22:21 DEBUG Settings:84 - Order SQL updates by primary key: disabled
+2018-10-19 20:22:21 DEBUG Settings:85 - Order SQL inserts for batching: disabled
+2018-10-19 20:22:21 DEBUG Settings:87 - multi-tenancy strategy : NONE
+2018-10-19 20:22:21 DEBUG Settings:89 - JTA Track by Thread: enabled
+2018-10-19 20:22:21 DEBUG Settings:91 - Query language substitutions: {}
+2018-10-19 20:22:21 DEBUG Settings:92 - JPA query language strict compliance: disabled
+2018-10-19 20:22:21 DEBUG Settings:93 - Named query checking : enabled
+2018-10-19 20:22:21 DEBUG Settings:95 - Second-level cache: enabled
+2018-10-19 20:22:21 DEBUG Settings:96 - Second-level query cache: disabled
+2018-10-19 20:22:21 DEBUG Settings:97 - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@f5281c
+2018-10-19 20:22:21 DEBUG Settings:98 - Second-level cache region prefix: null
+2018-10-19 20:22:21 DEBUG Settings:99 - Optimize second-level cache for minimal puts: disabled
+2018-10-19 20:22:21 DEBUG Settings:100 - Structured second-level cache entries: disabled
+2018-10-19 20:22:21 DEBUG Settings:101 - Second-level cache direct-reference entries: disabled
+2018-10-19 20:22:21 DEBUG Settings:102 - Automatic eviction of collection cache: disabled
+2018-10-19 20:22:21 DEBUG Settings:104 - JDBC batch size: 15
+2018-10-19 20:22:21 DEBUG Settings:105 - JDBC batch updates for versioned data: disabled
+2018-10-19 20:22:21 DEBUG Settings:106 - Scrollable result sets: enabled
+2018-10-19 20:22:21 DEBUG Settings:107 - Wrap result sets: disabled
+2018-10-19 20:22:21 DEBUG Settings:108 - JDBC3 getGeneratedKeys(): disabled
+2018-10-19 20:22:21 DEBUG Settings:109 - JDBC result set fetch size: null
+2018-10-19 20:22:21 DEBUG Settings:110 - Connection release mode: AFTER_TRANSACTION
+2018-10-19 20:22:21 DEBUG Settings:111 - Generate SQL with comments: disabled
+2018-10-19 20:22:21 DEBUG SessionFactoryImpl:258 - Session factory constructed with filter configurations : {}
+2018-10-19 20:22:21 DEBUG SessionFactoryImpl:259 - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, java.class.path=D:\159950_Rishabh_Tandon\JPA_Hibernate\JPAHibernateBankingSystem\target\classes;D:\159950_Rishabh_Tandon\JPA_Hibernate\JPAHibernateBankingSystem\resources\ojdbc6_g.jar;D:\MavenConfig\MavenRepo\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;D:\MavenConfig\MavenRepo\org\hibernate\hibernate-core\5.2.12.Final\hibernate-core-5.2.12.Final.jar;D:\MavenConfig\MavenRepo\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;D:\MavenConfig\MavenRepo\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;D:\MavenConfig\MavenRepo\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;D:\MavenConfig\MavenRepo\antlr\antlr\2.7.7\antlr-2.7.7.jar;D:\MavenConfig\MavenRepo\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.1.Final\jboss-transaction-api_1.2_spec-1.0.1.Final.jar;D:\MavenConfig\MavenRepo\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar;D:\MavenConfig\MavenRepo\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;D:\MavenConfig\MavenRepo\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;D:\MavenConfig\MavenRepo\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;D:\MavenConfig\MavenRepo\log4j\log4j\1.2.17\log4j-1.2.17.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=32, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=Asia/Calcutta, javax.persistence.jdbc.user=****, javax.persistence.jdbc.url=jdbc:oracle:thin:@localhost:1521:XE, os.name=Windows 7, java.vm.specification.version=1.8, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files (x86)\Java\jre1.8.0_72\bin, sun.java.command=com.cg.banking.main.MainClass, sun.cpu.endian=little, user.home=C:\Users\ritandon, user.language=en, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files (x86)\Java\jre1.8.0_72, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, javax.persistence.jdbc.driver=oracle.jdbc.driver.OracleDriver, sun.boot.class.path=C:\Program Files (x86)\Java\jre1.8.0_72\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_72\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_72\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_72\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_72\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_72\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_72\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_72\classes, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot Client Compiler, java.runtime.version=1.8.0_72-b15, user.name=ritandon, path.separator=;, hibernate.connection.username=system, os.version=6.1, java.endorsed.dirs=C:\Program Files (x86)\Java\jre1.8.0_72\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:XE, hibernate.ejb.persistenceUnitName=JPA-PU, file.encoding=Cp1252, java.vm.name=Java HotSpot(TM) Client VM, hibernate.show_sql=true, hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\ritandon\AppData\Local\Temp\, java.version=1.8.0_72, user.dir=D:\159950_Rishabh_Tandon\JPA_Hibernate\JPAHibernateBankingSystem, os.arch=x86, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=Service Pack 1, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@116c6b3, java.library.path=C:\Program Files (x86)\Java\jre1.8.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files (x86)/Java/jre1.8.0_72/bin/client;C:/Program Files (x86)/Java/jre1.8.0_72/bin;C:/Program Files (x86)/Java/jre1.8.0_72/lib/i386;C:\oraclexe\app\oracle\product\11.2.0\server\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\Google\Chrome\Application;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\Doctrine extensions for PHP\;C:\Users\ritandon\AppData\Local\Programs\Git\cmd;D:\Rishabh Tandon\Software\Eclipse_Luna\eclipse;;., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.72-b15, hibernate.bytecode.use_reflection_optimizer=false, java.ext.dirs=C:\Program Files (x86)\Java\jre1.8.0_72\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.io.unicode.encoding=UnicodeLittle, javax.persistence.jdbc.password=corp123, java.class.version=52.0}
+2018-10-19 20:22:21 DEBUG JaccIntegrator:80 - Skipping JACC integration as it was not enabled
+2018-10-19 20:22:21 DEBUG CascadeStyles:268 - External cascade style registration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]
+2018-10-19 20:22:21 DEBUG SessionFactoryImpl:298 - Instantiated session factory
+2018-10-19 20:22:21 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [com.cg.banking.beans.Account] is safe
+2018-10-19 20:22:21 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.cg.banking.beans.Account
+2018-10-19 20:22:21 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [com.cg.banking.beans.Account] is safe
+2018-10-19 20:22:21 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.cg.banking.beans.Account
+2018-10-19 20:22:21 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [com.cg.banking.beans.Transaction] is safe
+2018-10-19 20:22:21 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.cg.banking.beans.Transaction
+2018-10-19 20:22:21 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [com.cg.banking.beans.Transaction] is safe
+2018-10-19 20:22:21 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.cg.banking.beans.Transaction
+2018-10-19 20:22:21 DEBUG AbstractCollectionPersister:670 - Static SQL for collection: com.cg.banking.beans.Account.transactions
+2018-10-19 20:22:21 DEBUG AbstractCollectionPersister:672 -  Row insert: update Transaction set account_accountNo=? where transactionId=?
+2018-10-19 20:22:21 DEBUG AbstractCollectionPersister:675 -  Row update: update Transaction set  where transactionId=?
+2018-10-19 20:22:21 DEBUG AbstractCollectionPersister:678 -  Row delete: update Transaction set account_accountNo=null where account_accountNo=? and transactionId=?
+2018-10-19 20:22:21 DEBUG AbstractCollectionPersister:681 -  One-shot delete: update Transaction set account_accountNo=null where account_accountNo=?
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:3608 - Static SQL for entity: com.cg.banking.beans.Account
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:3613 -  Version select: select accountNo from Account where accountNo =?
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:3616 -  Snapshot select: select account_.accountNo, account_.accountBalance as accountBalance2_0_, account_.accountType as accountType3_0_, account_.pinNumber as pinNumber4_0_, account_.status as status5_0_ from Account account_ where account_.accountNo=?
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into Account (accountBalance, accountType, pinNumber, status, accountNo) values (?, ?, ?, ?, ?)
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:394 -  Update 0: update Account set accountBalance=?, accountType=?, pinNumber=?, status=? where accountNo=?
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from Account where accountNo=?
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ced48b]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1c28c33]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@44dc81]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [NONE]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=?
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1a602fc]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1b2cfcb]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@758afa]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [READ]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=?
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1b9c7aa]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1c6de5b]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1baa903]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [UPGRADE]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=? for update
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7fbe09]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1df4d43]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d91bca]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [UPGRADE_NOWAIT]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=? for update nowait
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@cb698e]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@641ec8]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1f65e45]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [UPGRADE_SKIPLOCKED]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=? for update skip locked
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@eade6c]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5bd950]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@118aa28]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [FORCE]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=? for update nowait
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1390459]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@113052e]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d2b28e]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [PESSIMISTIC_READ]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=? for update
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@746061]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@fcd46d]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@45dbe]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [PESSIMISTIC_WRITE]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=? for update
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@14658f7]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5b064f]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@425897]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [PESSIMISTIC_FORCE_INCREMENT]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=? for update nowait
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1163d48]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@a4479a]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@163b39]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [OPTIMISTIC]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=?
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@a8a64e]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactions
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@98fc68]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@104d271]
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Account)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Account)
+          - CollectionAttributeFetchImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Account.transactions)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:2>, path=com.cg.banking.beans.Account.transactions.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {accountNo1_0_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Account [OPTIMISTIC_FORCE_INCREMENT]: select account0_.accountNo as accountNo1_0_0_, account0_.accountBalance as accountBalance2_0_0_, account0_.accountType as accountType3_0_0_, account0_.pinNumber as pinNumber4_0_0_, account0_.status as status5_0_0_ from Account account0_ where account0_.accountNo=?
+2018-10-19 20:22:21 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity com.cg.banking.beans.Account: select account0_.accountNo as accountNo1_0_1_, account0_.accountBalance as accountBalance2_0_1_, account0_.accountType as accountType3_0_1_, account0_.pinNumber as pinNumber4_0_1_, account0_.status as status5_0_1_, transactio1_.account_accountNo as account_accountNo4_1_3_, transactio1_.transactionId as transactionId1_1_3_, transactio1_.transactionId as transactionId1_1_0_, transactio1_.account_accountNo as account_accountNo4_1_0_, transactio1_.amount as amount2_1_0_, transactio1_.transactionType as transactionType3_1_0_ from Account account0_ left outer join Transaction transactio1_ on account0_.accountNo=transactio1_.account_accountNo where account0_.accountNo=?
+2018-10-19 20:22:21 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity com.cg.banking.beans.Account: select account0_.accountNo as accountNo1_0_1_, account0_.accountBalance as accountBalance2_0_1_, account0_.accountType as accountType3_0_1_, account0_.pinNumber as pinNumber4_0_1_, account0_.status as status5_0_1_, transactio1_.account_accountNo as account_accountNo4_1_3_, transactio1_.transactionId as transactionId1_1_3_, transactio1_.transactionId as transactionId1_1_0_, transactio1_.account_accountNo as account_accountNo4_1_0_, transactio1_.amount as amount2_1_0_, transactio1_.transactionType as transactionType3_1_0_ from Account account0_ left outer join Transaction transactio1_ on account0_.accountNo=transactio1_.account_accountNo where account0_.accountNo=?
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:3608 - Static SQL for entity: com.cg.banking.beans.Transaction
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:3613 -  Version select: select transactionId from Transaction where transactionId =?
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:3616 -  Snapshot select: select transactio_.transactionId, transactio_.account_accountNo as account_accountNo4_1_, transactio_.amount as amount2_1_, transactio_.transactionType as transactionType3_1_ from Transaction transactio_ where transactio_.transactionId=?
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into Transaction (account_accountNo, amount, transactionType, transactionId) values (?, ?, ?, ?)
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:394 -  Update 0: update Transaction set account_accountNo=?, amount=?, transactionType=? where transactionId=?
+2018-10-19 20:22:21 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from Transaction where transactionId=?
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1812a9b]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e350f1]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account.accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account.accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account.pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account.status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account.transactions
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:145 - Property path deemed to be circular : account.transactions
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+          - JOIN (JoinDefinedByMetadata(account)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.cg.banking.beans.Account)
+                - SQL table alias mapping - account1_
+                - alias suffix - 1_
+                - suffixed key columns - {accountNo1_0_1_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [NONE]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_, account1_.accountNo as accountNo1_0_1_, account1_.accountBalance as accountBalance2_0_1_, account1_.accountType as accountType3_0_1_, account1_.pinNumber as pinNumber4_0_1_, account1_.status as status5_0_1_ from Transaction transactio0_ left outer join Account account1_ on transactio0_.account_accountNo=account1_.accountNo where transactio0_.transactionId=?
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1cb4808]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c80397]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account.accountBalance
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account.accountType
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account.pinNumber
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account.status
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account.transactions
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:145 - Property path deemed to be circular : account.transactions
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+          - JOIN (JoinDefinedByMetadata(account)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.cg.banking.beans.Account)
+                - SQL table alias mapping - account1_
+                - alias suffix - 1_
+                - suffixed key columns - {accountNo1_0_1_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [READ]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_, account1_.accountNo as accountNo1_0_1_, account1_.accountBalance as accountBalance2_0_1_, account1_.accountType as accountType3_0_1_, account1_.pinNumber as pinNumber4_0_1_, account1_.status as status5_0_1_ from Transaction transactio0_ left outer join Account account1_ on transactio0_.account_accountNo=account1_.accountNo where transactio0_.transactionId=?
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@a9b7c6]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@d3068a]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [UPGRADE]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=? for update
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2b6087]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@8e6492]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [UPGRADE_NOWAIT]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=? for update nowait
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7fd41f]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1324585]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [UPGRADE_SKIPLOCKED]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=? for update skip locked
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@dce7ea]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d8294b]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [FORCE]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=? for update nowait
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1974109]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f3efa8]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [PESSIMISTIC_READ]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=? for update
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2f1f4c]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1c9e76b]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [PESSIMISTIC_WRITE]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=? for update
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@46d8d5]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1bda97b]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [PESSIMISTIC_FORCE_INCREMENT]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=? for update nowait
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1f5fd58]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6851c7]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [OPTIMISTIC]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=?
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@bcd0c0]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1db5fa5]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.cg.banking.beans.Transaction)
+    - Returns
+       - EntityReturnImpl(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:0>, path=com.cg.banking.beans.Transaction)
+          - EntityAttributeFetchImpl(entity=com.cg.banking.beans.Account, querySpaceUid=<gen:1>, path=com.cg.banking.beans.Transaction.account)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.cg.banking.beans.Transaction)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {transactionId1_1_0_}
+
+2018-10-19 20:22:21 DEBUG EntityLoader:115 - Static select for entity com.cg.banking.beans.Transaction [OPTIMISTIC_FORCE_INCREMENT]: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=?
+2018-10-19 20:22:21 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity com.cg.banking.beans.Transaction: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=?
+2018-10-19 20:22:21 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity com.cg.banking.beans.Transaction: select transactio0_.transactionId as transactionId1_1_0_, transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.amount as amount2_1_0_, transactio0_.transactionType as transactionType3_1_0_ from Transaction transactio0_ where transactio0_.transactionId=?
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1884cb1]
+2018-10-19 20:22:21 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ed9710]
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : account
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:145 - Property path deemed to be circular : account
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : amount
+2018-10-19 20:22:21 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : transactionType
+2018-10-19 20:22:21 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2018-10-19 20:22:21 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2018-10-19 20:22:21 DEBUG LoadPlanTreePrinter:55 - LoadPlan(collection=com.cg.banking.beans.Account.transactions)
+    - Returns
+       - CollectionReturnImpl(collection=com.cg.banking.beans.Account.transactions, querySpaceUid=<gen:0>, path=[com.cg.banking.beans.Account.transactions])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.cg.banking.beans.Transaction, querySpaceUid=<gen:1>, path=[com.cg.banking.beans.Account.transactions].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.cg.banking.beans.Account.transactions)
+          - SQL table alias mapping - transactio0_
+          - alias suffix - 0_
+          - suffixed key columns - {account_accountNo4_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - transactionId1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.cg.banking.beans.Transaction)
+                - SQL table alias mapping - transactio0_
+                - alias suffix - 1_
+                - suffixed key columns - {transactionId1_1_1_}
+
+2018-10-19 20:22:21 DEBUG CollectionLoader:83 - Static select for collection com.cg.banking.beans.Account.transactions: select transactio0_.account_accountNo as account_accountNo4_1_0_, transactio0_.transactionId as transactionId1_1_0_, transactio0_.transactionId as transactionId1_1_1_, transactio0_.account_accountNo as account_accountNo4_1_1_, transactio0_.amount as amount2_1_1_, transactio0_.transactionType as transactionType3_1_1_ from Transaction transactio0_ where transactio0_.account_accountNo=?
+2018-10-19 20:22:21 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@60f3d7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2018-10-19 20:22:21 DEBUG SQL:92 - create table Account (accountNo number(19,0) not null, accountBalance float not null, accountType varchar2(255 char), pinNumber number(10,0) not null, status varchar2(255 char), primary key (accountNo))
+2018-10-19 20:22:21 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:277)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:71)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:313)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:452)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:889)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.cg.banking.util.EntityManagerFactoryProvider.getEntityManagerFactory(EntityManagerFactoryProvider.java:10)
+	at com.cg.banking.daoservices.AccountDAOImpl.<init>(AccountDAOImpl.java:15)
+	at com.cg.banking.services.BankingServicesImpl.<init>(BankingServicesImpl.java:21)
+	at com.cg.banking.main.MainClass.<clinit>(MainClass.java:18)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00955: name is already used by an existing object
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:197)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1354)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1709)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2761)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2690)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:1189)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2018-10-19 20:22:21 DEBUG SQL:92 - create table Transaction (transactionId number(10,0) not null, amount float not null, transactionType varchar2(255 char), account_accountNo number(19,0), primary key (transactionId))
+2018-10-19 20:22:21 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:277)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:71)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:313)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:452)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:889)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.cg.banking.util.EntityManagerFactoryProvider.getEntityManagerFactory(EntityManagerFactoryProvider.java:10)
+	at com.cg.banking.daoservices.AccountDAOImpl.<init>(AccountDAOImpl.java:15)
+	at com.cg.banking.services.BankingServicesImpl.<init>(BankingServicesImpl.java:21)
+	at com.cg.banking.main.MainClass.<clinit>(MainClass.java:18)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00955: name is already used by an existing object
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:197)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1354)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1709)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2761)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2690)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:1189)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 18 more
+2018-10-19 20:22:21 DEBUG SQL:92 - alter table Transaction add constraint FKgw5j6wjnj29x1f9aiolkf4hri foreign key (account_accountNo) references Account
+2018-10-19 20:22:21 WARN  ExceptionHandlerLoggedImpl:27 - GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:313)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:452)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:889)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:58)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54)
+	at com.cg.banking.util.EntityManagerFactoryProvider.getEntityManagerFactory(EntityManagerFactoryProvider.java:10)
+	at com.cg.banking.daoservices.AccountDAOImpl.<init>(AccountDAOImpl.java:15)
+	at com.cg.banking.services.BankingServicesImpl.<init>(BankingServicesImpl.java:21)
+	at com.cg.banking.main.MainClass.<clinit>(MainClass.java:18)
+Caused by: java.sql.SQLSyntaxErrorException: ORA-02275: such a referential constraint already exists in the table
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:452)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:400)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:884)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:471)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:199)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:535)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:197)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1354)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1709)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2761)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2690)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:1189)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 17 more
+2018-10-19 20:22:21 DEBUG JtaPlatformInitiator:42 - No JtaPlatform was specified, checking resolver
+2018-10-19 20:22:21 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2018-10-19 20:22:21 DEBUG StandardJtaPlatformResolver:102 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2018-10-19 20:22:21 DEBUG NamedQueryRepository:151 - Checking 0 named HQL queries
+2018-10-19 20:22:21 DEBUG NamedQueryRepository:167 - Checking 0 named SQL queries
+2018-10-19 20:22:21 DEBUG SessionFactoryRegistry:52 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@19a8f59
+2018-10-19 20:22:21 DEBUG SessionFactoryRegistry:74 - Registering SessionFactory: 6f2511fc-f86a-4c0d-91a6-a0cf0277a933 (<unnamed>)
+2018-10-19 20:22:21 DEBUG SessionFactoryRegistry:81 - Not binding SessionFactory to JNDI, no JNDI name configured
+2018-10-19 20:22:50 DEBUG DriverManagerConnectionProviderImpl:51 - Connection pool now considered primed; min-size will be maintained

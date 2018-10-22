@@ -1,0 +1,23 @@
+<html>
+<script>
+	var myEmployee={
+	empId:1001,
+	empName:"Rahul",
+	empDep:"java",
+	isAdmin:false,
+	empSalary:57778.90,
+	address: {
+		street:"MG Road",
+		city:"pune",
+		pincode:410017
+	}
+	};
+	console.log(myEmployee["empId"]);
+	console.log(myEmployee.address);
+	console.log(myEmployee["address"]["city"]);
+	delete myEmployee.empDep;
+	console.log(myEmployee["empDep"]==undefined	);
+	
+
+</script>
+</html>

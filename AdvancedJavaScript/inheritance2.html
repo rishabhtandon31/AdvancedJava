@@ -1,0 +1,19 @@
+<html>
+<script>
+	function Employee(name){
+		this.name=name;
+	}
+	
+	Employee.prototype.getName= function() { return this.name}
+	
+	function Department(manager){
+		this.manager=manager;
+	}
+	
+	Department.prototype.getManagername= function() {return this.manager}
+	
+	Department.prototype=new Employee("Rishabh");
+	var dep=new Department();
+	console.log(dep.getName());
+</script>
+</html>

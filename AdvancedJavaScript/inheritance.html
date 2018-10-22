@@ -1,0 +1,52 @@
+<html>
+<script>
+	function Employee(firstName,lastName, basicSalary){
+		this.firstName= firstName;
+		this.lastName= lastName;
+		this.basicSalary= basicSalary;
+		this.hra= 0;
+		this.da= 0;
+		this.ta= 0;
+		this.totalSalary= 0;
+	
+		this.calculateTotalsalary=()=>{
+			this.totalSalary=this.basicSalary
+			return this.totalSalary;
+		}
+	}
+	
+	Employee.prototype.email="default@gmail.com"
+	Employee.prototype.fullName=function(){
+		return this.firstName+" "+this.lastName
+	}
+	
+	function PEmployee(firstName,lastName, basicSalary){
+		this.hra=0;
+		this.ta=0;
+		this.da=0;
+		Employee.call(this,firstName,lastName, basicSalary)
+		this.calculateTotalSalary=function(){
+			this.hra=this.basicSalary*10/100;
+			this.ta=this.basicSalary*8/100;
+			this.da=this.basicSalary*7/100;
+			this.totalSalary=this.basicSalary+this.hra+this.da+this.ta;
+			return this.totalSalary;
+		}
+	}
+	
+	var pemp= new PEmployee('Rishabh', 'Tandon', 15000);
+	
+	PEmployee.prototype.email="default2@gmail.com"
+	PEmployee.prototype.fullName=function(){
+		return this.firstName+" "+this.lastName
+	
+	pemp.email="rishabh@gmail.com"
+	
+	//var employee2= new Employee('Rahul', 'Walia', 20000);
+	//console.log(employee2.email)
+	//console.log(employee2.fullName())
+	
+	console.log(pemp.email)
+	console.log(pemp.fullName())
+</script>
+</html>
